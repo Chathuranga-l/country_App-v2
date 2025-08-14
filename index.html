@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="globe-icon">🌍</div>
+                Country Explorer
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="home">
+        <!-- Header -->
+        <section class="header-section">
+            <h1>Discover the World</h1>
+            <p>Explore countries, their cultures, and fascinating details from around the globe</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-container" id="search">
+            <div class="search-wrapper">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for any country..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="search-btn" onclick="searchCountry()">
+                    🔍 Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Loading Bar -->
+        <div class="loading-container" id="loadingContainer">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div class="error-message" id="errorMessage"></div>
+
+        <!-- Country Display -->
+        <div class="country-card" id="countryCard">
+            <div class="country-content">
+                <div class="country-info">
+                    <h2 id="countryName">Country Name</h2>
+                    <div class="country-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Official Name:</span>
+                            <span class="detail-value" id="officialName">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Region:</span>
+                            <span class="detail-value" id="region">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Subregion:</span>
+                            <span class="detail-value" id="subregion">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Population:</span>
+                            <span class="detail-value" id="population">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Capital:</span>
+                            <span class="detail-value" id="capital">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Area:</span>
+                            <span class="detail-value" id="area">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Languages:</span>
+                            <span class="detail-value" id="languages">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Currency:</span>
+                            <span class="detail-value" id="currency">-</span>
+                        </div>
+                    </div>
+                    <a href="#" id="mapLink" class="map-btn" target="_blank">🗺️ View on Map</a>
+                </div>
+                <div class="flag-container">
+                    <img src="" alt="Country Flag" id="flagImg" class="flag-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- All Countries Grid -->
+        <div class="countries-grid" id="countriesGrid"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Country Explorer</h3>
+                <p>Discover detailed information about countries worldwide. From population statistics to cultural insights, explore the diversity of our planet.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#search">Search Countries</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>Contact Info</h3>
+                <p>Email: info@countryexplorer.com</p>
+                <p>Phone: +94 78 833 6914</p>
+                <p>Made By Lasith Chathuranga</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Country Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

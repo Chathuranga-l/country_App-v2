@@ -188,28 +188,6 @@ body {
 .country-card-mini:hover {
     transform: translateY(-5px);
 }
-
-/* ===================== FOOTER ===================== */
-.footer {
-    background: #2e2e2e;
-    color: #f5f0e6;
-    padding: 3rem 2rem 1rem;
-    margin-top: auto;
-}
-
-.footer-section h3 {
-    color: #d6c4a8;
-}
-
-.footer-section p,
-.footer-section a {
-    color: rgba(245,240,230,0.8);
-}
-
-.footer-section a:hover {
-    color: #d6c4a8;
-}
-
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 768px) {
     .country-content {
